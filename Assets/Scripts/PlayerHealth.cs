@@ -7,10 +7,10 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int health = 10;
     [SerializeField] int healthDecrease = 1;
-    [SerializeField] Text healthText;
+    [SerializeField] Text healthText = null;
     [SerializeField] AudioClip playerDamageSFX;
 
-    void Start()
+    void Awake()
     {
         healthText.text = health.ToString();
     }

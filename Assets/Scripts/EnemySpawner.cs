@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [Range(0.1f, 120f)]
     [SerializeField] float secondsBetweenSpawns = 2f;
-    [SerializeField] EnemyMovement enemyPrefab;
+    [SerializeField] GameObject enemyPrefab;
     [SerializeField] Transform enemyParentTransform;
     [SerializeField] Text spawnedEnemies;
     [SerializeField] AudioClip spawnedEnemySFX;
